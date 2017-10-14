@@ -27,7 +27,7 @@ public class MainActivity extends AppCompatActivity {
         data.add(new MyItem(R.drawable.shelter_05, "홍릉동부제2임대아파트 105동", "서울특별시 동대문구 제기로26길 26", "by국민재난안전포털"));
         data.add(new MyItem(R.drawable.shelter_06, "한신아파트(106동)", "서울특별시 동대문구 제기로 131", "by국민재난안전포털"));
         data.add(new MyItem(R.drawable.shelter_07, "한성대입구역(4호선)", "서울특별시 성북구 삼선교로 지하1", "by국민재난안전포털" ));
-        data.add(new MyItem(R.drawable.shelter_08, "동소문송산아파트 101동 지하주차장", "서울특별시 성북구 동소문로3길 101", "by국민재난안전포털"));
+        data.add(new MyItem(R.drawable.shelter_08, "동소문송산아파트 101동 \n지하주차장", "서울특별시 성북구 동소문로3길 101", "by국민재난안전포털"));
 
         //list어댑터 생성
         adapter = new MyAdapter(this,R.layout.listview_main, data);

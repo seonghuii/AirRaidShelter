@@ -17,6 +17,8 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        //액션바 타이틀 변경
+        getSupportActionBar().setTitle("AirRaidShelter");
 
         //lisview에 들어갈 객체 선언
         ArrayList<MyItem> data = new ArrayList<MyItem>();
@@ -48,4 +50,24 @@ public class MainActivity extends AppCompatActivity {
             }
         });
         }
+
+    //액션버튼 메뉴액션바에 집어넣기
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu){
+        getMenuInflater().inflate(R.menu.main_menu,menu);
+        return true;
+    }
+    //액션버튼을 클릭했을때의 동작
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item){
+        if(id==R.id.secondActivity){
+            Intent second =new Intent(this,SecondActivity.class);
+            startActivity(second);
+        }
+        if(id==R.id.pulse){
+
+        }
+        return super.onOptionsItemSelected(item);
+    }
+
 }
